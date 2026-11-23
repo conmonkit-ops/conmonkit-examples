@@ -11,9 +11,10 @@ Example CSV files for the free checker at [conmonkit.com](https://conmonkit.com)
 ## Try them
 
 1. Open [conmonkit.com](https://conmonkit.com) and go to the [checker](https://conmonkit.com/check/).
-2. Choose "Build from a CSV", then choose one of the files.
-3. Fill in the two settings the checker needs: the certification class (A to D) and the address of your Certification Package Overview. For a trial any full web address works, for example `https://example.test/package`.
-4. Read the result. If it says "The reports were not built.", a setting is missing; the message says which one.
+2. Choose "Build from a CSV".
+3. Fill in the settings the checker needs: the certification class (A to D), the first day and the last day of the reporting period (one month, for example `2026-11-01` to `2026-11-30`) and the address of your Certification Package Overview. For a trial any full web address works, for example `https://example.test/package`.
+4. Choose one of the files.
+5. Read the result. If it says "The reports were not built.", the page lists what is missing in the settings or what stops the file from being read.
 
 The checker's page says: "Everything runs in your browser. Your files are never uploaded."
 

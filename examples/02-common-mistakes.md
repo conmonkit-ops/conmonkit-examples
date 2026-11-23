@@ -14,4 +14,10 @@ The file has 10 records, all invented. Row numbers count the header as row 1, so
 | 9 | EX-108 | The reduction date for its rating has passed and there is no overdue explanation (the checker also shows a reminder that the reduction is late). | Reduce the rating if the work is done, or write the reason in `overdue_explanation`. |
 | 10, 11 | EX-109 | Two rows use the same tracking ID. Both rows are left out until this is fixed. | Give each row its own `tracking_id`, for example `EX-109` and `EX-110`. |
 
-Rows 2 to 7 are caught when the file is read, so they are listed as row problems. Rows 8 to 11 are caught when the records are checked; rows 8 and 9 depend on the date of the check, and are shown here as at 2026-12-01 for the period 2026-11-01 to 2026-12-01.
+Rows 2 to 7 are caught when the file is read. They are listed under "Problems in the CSV" and left out of the files. Rows 8 to 11 are caught when the records are checked, so they appear as findings.
+
+Use a reporting period of one month, for example first day `2026-11-01` and last day `2026-11-30`. A longer period adds a warning of its own.
+
+The checker has no setting for the date of the check: it uses the moment the reports are built, which is as soon as you choose the file. Only row 9 (EX-108) depends on it. Its reduction date was 2026-11-22, 09:00 UTC, so on any later day the checker shows one error (no overdue explanation) and one warning (the reduction is late). The other rows give the same result on any day.
+
+If you leave the overview text empty, the checker adds one line for information that asks you to write one.
