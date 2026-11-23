@@ -3,7 +3,7 @@
 Example CSV files for the free checker at [conmonkit.com](https://conmonkit.com), which checks the monthly vulnerability report of a cloud provider in the FedRAMP programme.
 
 - `template/` holds the empty template (header row only).
-- `examples/01-clean.csv` has 8 records the checker accepts with no finding.
+- `examples/01-clean.csv` has 8 records with no error and no warning. If you leave the overview text empty, the checker adds one line for information that asks you to write one.
 - `examples/02-common-mistakes.csv` has 10 records with typical mistakes; `02-common-mistakes.md` explains each one.
 - `examples/03-larger.csv` has 40 valid records with mixed ratings and states.
 - `COLUMNS.md` describes every column.
@@ -12,7 +12,8 @@ Example CSV files for the free checker at [conmonkit.com](https://conmonkit.com)
 
 1. Open [conmonkit.com](https://conmonkit.com) and go to the [checker](https://conmonkit.com/check/).
 2. Choose "Build from a CSV", then choose one of the files.
-3. Read the result.
+3. Fill in the two settings the checker needs: the certification class (A to D) and the address of your Certification Package Overview. For a trial any full web address works, for example `https://example.test/package`.
+4. Read the result. If it says "The reports were not built.", a setting is missing; the message says which one.
 
 The checker's page says: "Everything runs in your browser. Your files are never uploaded."
 
