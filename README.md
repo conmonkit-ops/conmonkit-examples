@@ -22,6 +22,8 @@ The dates in the files are fixed. Reminders about time limits can appear when yo
 
 All data in these files is invented.
 
+You may copy, change and reuse everything in this repository without asking: it is dedicated to the public domain under [CC0 1.0 Universal](LICENSE).
+
 The checker reads the files against the schemas published at https://github.com/FedRAMP/schemas (versions 0.1.1, dated 2026-06-24, when these examples were made).
 
 ## Guides
