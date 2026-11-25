@@ -18,6 +18,6 @@ Rows 2 to 7 are caught when the file is read. They are listed under "Problems in
 
 Use a reporting period of one month, for example first day `2026-11-01` and last day `2026-11-30`. A longer period adds a warning of its own.
 
-The checker has no setting for the date of the check: it uses the moment the reports are built, which is as soon as you choose the file. Only row 9 (EX-108) depends on it. Its reduction date was 2026-11-22, 09:00 UTC, so on any later day the checker shows one error (no overdue explanation) and one warning (the reduction is late). The other rows give the same result on any day.
+The checker has no setting for the date of the check: it uses the moment the reports are built, which is as soon as you choose the file. Only row 9 (EX-108) depends on it. Its reduction date depends on the certification class: 2026-11-22, 09:00 UTC for classes A and B, 2026-11-06, 09:00 UTC for class C and 2026-10-29, 09:00 UTC for class D. On any later day the checker shows one error (no overdue explanation) and one warning (the reduction is late). The other rows give the same result on any day.
 
 If you leave the overview text empty, the checker adds one line for information that asks you to write one.
